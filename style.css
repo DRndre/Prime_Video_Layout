@@ -1,0 +1,67 @@
+/* Global directives */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #13181e;
+}
+
+/* Navbar area */
+img#logo {
+  width: 100px;
+}
+i.lens-icon {
+  font-size: 20px;
+}
+img.user-logo {
+  width: 40px;
+}
+
+/* Film Section Area */
+img.movie-box {
+  width: 270px;
+}
+span.see-more {
+  font-size: 10px;
+  cursor: pointer;
+}
+div.movie-block {
+  position: relative;
+}
+div.movie-info {
+  font-size: 15px;
+  width: 280px;
+  padding: 5px;
+  border: solid 2px rgb(13, 101, 231);
+  border-radius: 7px;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+.show {
+  display: block !important;
+}
+div.movie-info:hover {
+  transition: transform 2s linear 0.25s;
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.movie-box {
+  cursor: pointer;
+}
+
+/* Bootstrap overrides */
+.bg-dark {
+  background-color: #1d242e !important;
+}
+
+nav .nav-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-color: lightgray;
+}

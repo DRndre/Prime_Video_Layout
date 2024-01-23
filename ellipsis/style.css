@@ -1,0 +1,18 @@
+/* div.my-ellipsis {
+  width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 2px;
+  border: solid 1px grey;
+} */
+
+div.my-ellipsis {
+  width: 400px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  padding: 2px;
+  border: solid 1px grey;
+}

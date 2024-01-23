@@ -1,0 +1,127 @@
+/* Global directives */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #13181e;
+  }
+  
+  /* Navbar area */
+  img#logo {
+    width: 100px;
+  }
+  i.lens-icon {
+    font-size: 20px;
+  }
+  img.user-logo {
+    width: 40px;
+  }
+  
+  /* Film Section Area */
+  img.movie-box {
+    width: 270px;
+  }
+  span.see-more {
+    font-size: 10px;
+    cursor: pointer;
+  }
+  div.movie-block {
+    position: relative;
+  }
+  div.movie-info {
+    font-size: 15px;
+    width: 280px;
+    padding: 5px;
+    border: solid 2px rgb(13, 101, 231);
+    border-radius: 7px;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    display: none;
+  }
+  div.movie-block:hover div.movie-info {
+    display: block !important;
+  }
+  div.movie-block:hover {
+    transition: transform 2s linear 0.25s;
+    transform: scale(1.2);
+    z-index: 1;
+  }
+  
+  /* Netflix Carousel */
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    background-color: #000;
+  }
+  h1 {
+    font-family: Arial;
+    color: red;
+    text-align: center;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+  .wrapper section {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    margin: 20px 0;
+  }
+  .wrapper section .item {
+    padding: 0 2px;
+    transition: 250ms all;
+  }
+  .wrapper section .item:hover {
+    margin: 0 40px;
+    transform: scale(1.2);
+  }
+  .wrapper section a {
+    position: absolute;
+    color: #fff;
+    text-decoration: none;
+    font-size: 6em;
+    background: black;
+    width: 80px;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+  }
+  .wrapper section a:nth-of-type(1) {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+  }
+  .wrapper section a:nth-of-type(2) {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+  }
+  @media only screen and (max-width: 600px) {
+    a.arrow__btn {
+      display: none;
+    }
+  }
+  
+  /* Bootstrap overrides */
+  .bg-dark {
+    background-color: #1d242e !important;
+  }
+  
+  nav .nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-color: lightgray;
+  }
+  
